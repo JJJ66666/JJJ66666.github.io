@@ -546,6 +546,9 @@ body {
   .navbar.navbar-default .container > .navbar-collapse > ul {
     text-align: center;
   }
+  .navbar.navbar-default .container > .navbar-collapse > ul > li {
+    overflow: hidden;
+  }
   .navbar.navbar-default .container > .navbar-collapse > ul > li > a {
     padding: 10px !important;
   }
