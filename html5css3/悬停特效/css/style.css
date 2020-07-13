@@ -1,0 +1,484 @@
+.box {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+}
+.box .box-text {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  /* line-height: 150px; */
+  position: absolute;
+  padding: 0px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  left: 10px;
+  top: 10px;
+  z-index: 8;
+  opacity: 0;
+  transition: all 0.8s;
+  color: #ffffff;
+}
+.box .box-text h3 {
+  margin: 51px 22px -6px 22px;
+  font-size: 27px;
+  border-bottom: 1px solid;
+  text-transform: uppercase;
+}
+.box .box-text p {
+  font-size: 8px;
+  font-style: oblique;
+}
+.box .radius {
+  width: 200px;
+  height: 200px;
+  /* background-color: lightcoral; */
+  border-top: 10px solid #ECAB18;
+  border-left: 10px solid #ECAB18;
+  border-right: 10px solid #1AD280;
+  border-bottom: 10px solid #1AD280;
+  border-radius: 50%;
+  transition: transform 0.8s;
+}
+.box:hover .box-text {
+  opacity: 1;
+  left: 10px;
+  right: 0;
+  display: block;
+}
+.box:hover .radius {
+  transform: rotateZ(90deg);
+  /* background: indigo; */
+}
+.box0 {
+  background: url(../img/4.jpg) no-repeat center;
+}
+.box1 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  transition: transform 0.8s;
+}
+.box1 .box-text {
+  left: 200px;
+  transition: all 0.3s;
+}
+.box2 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  transform: scale(1);
+  transition: all 0.8s;
+}
+.box2 .box-text {
+  left: -200px;
+  z-index: -1;
+  background: #333333;
+}
+.box2:hover .radius {
+  transform: rotateZ(0deg);
+  transform: scale(0.5);
+  margin-left: 100px;
+  z-index: 9;
+  /* background: indigo; */
+}
+.box3 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  transform: scale(1);
+  transition: all 0.8s;
+  opacity: 1;
+}
+.box3 .box-text {
+  left: -200px;
+  z-index: -1;
+  background: #333333;
+  transition: all 0.3s;
+}
+.box3:hover .radius {
+  transform: rotateZ(0deg);
+  margin-left: 200px;
+  opacity: 0;
+  z-index: 9;
+  /* background: indigo; */
+}
+.box4 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+}
+.box4 .box-text {
+  background: #00000070;
+  transition: all 0s;
+}
+.box4:hover .radius {
+  transform: rotateZ(0deg);
+}
+.box4:hover .box-text {
+  transition-delay: 0.8s;
+}
+.box5 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.3s;
+}
+.box5 .box-text {
+  background: #00000070;
+  transform: scale(0.5);
+  transition: all 0.3s;
+  opacity: 0;
+}
+.box5:hover .radius {
+  transform: rotateZ(0deg);
+  transform: scale(1.5);
+  opacity: 0;
+}
+.box5:hover .box-text {
+  transform: scale(1);
+  opacity: 1;
+}
+.box6 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.3s;
+}
+.box6 .box-text {
+  left: -250px;
+  z-index: 10;
+  background: #333333;
+  transition-delay: 0.1s;
+  transform: left 0.3s;
+}
+.box6:hover .radius {
+  transform: rotateZ(0deg);
+  transform: scale(0.3);
+  opacity: 0;
+  z-index: 9;
+  /* background: indigo; */
+}
+.box7 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  transform: scale(1);
+  transition: margin-left 3.5s, transform 0.5s, opacity 3.5s;
+}
+.box7 .box-text {
+  left: -200px;
+  transform: scale(0.5);
+  opacity: 0;
+  z-index: -1;
+  background: #333333;
+  transition: left 0.5s, transform 3.5s, opacity 0.5s;
+}
+.box7:hover .radius {
+  transform: rotateZ(0deg);
+  transform: scale(0.5);
+  margin-left: 200px;
+  opacity: 0;
+  z-index: 9;
+  /* background: indigo; */
+}
+.box7:hover .box-text {
+  left: 0px;
+  transform: scale(1);
+  opacity: 1;
+  z-index: -1;
+  background: #333333;
+  transition-delay: left 0.5s;
+}
+.box8 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  margin-left: 0;
+  transition: all 0.3s;
+}
+.box8 .box-text {
+  border: 10px solid #333333;
+  background: #333333;
+  transform: scale(0);
+  transition: all 0.3s;
+}
+.box8:hover .radius {
+  margin-left: 250px;
+  transform: rotateZ(180deg);
+  opacity: 0;
+}
+.box8:hover .box-text {
+  transform: scale(1);
+}
+.box9 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  transform: scale(1);
+  transition: all 0.5s;
+  position: relative;
+  top: 0;
+}
+.box9 .box-text {
+  z-index: -1;
+  transform: scale(0);
+  transition: all 0.5s;
+  background: #333333;
+}
+.box9 .box-text h3 {
+  margin-top: 12px;
+}
+.box9:hover .radius {
+  transform: rotateZ(0deg);
+  transform: scale(0.4);
+  z-index: 9;
+  top: 50px;
+  /* background: indigo; */
+}
+.box9:hover .box-text {
+  transform: scale(1);
+}
+.box10 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  transform: rotateY(0deg) scale(1);
+  opacity: 1;
+  transition: all 0.5s;
+}
+.box10 .box-text {
+  z-index: -1;
+  background: #333333;
+  border: 10px solid #333333;
+  transform: rotateY(120deg) scale(0.4);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.box10:hover .radius {
+  transform: rotateZ(0deg) rotateY(120deg) scale(0.4);
+  z-index: 9;
+  opacity: 0;
+}
+.box10:hover .box-text {
+  transition-delay: 0.5s;
+  opacity: 1;
+  transform: rotateY(0deg) scale(1);
+}
+.box11 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  margin-left: 0;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.box11 .box-text {
+  border: 10px solid #333333;
+  background: #333333;
+  top: 10px;
+  left: 300px;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: rotateZ(-270deg);
+}
+.box11:hover .radius {
+  margin-left: 300px;
+  transform: rotateZ(270deg);
+  opacity: 0;
+}
+.box11:hover .box-text {
+  left: 10px;
+  opacity: 1;
+  transform: rotateZ(0deg);
+  transition-delay: 0.5s;
+}
+.box12 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+}
+.box12 .box-text {
+  background: none;
+  transition: all 0.5s;
+}
+.box12 .box-text h3 {
+  position: relative;
+  left: 300px;
+  transition: all 0.5s;
+}
+.box12 .box-text p {
+  position: relative;
+  right: 300px;
+  transition: all 0.5s;
+}
+.box12:hover .radius {
+  transform: rotateZ(0deg);
+}
+.box12:hover .box-text {
+  background: #00000070;
+}
+.box12:hover .box-text h3 {
+  left: 0;
+}
+.box12:hover .box-text p {
+  right: 0;
+}
+.box13 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  transform: rotateY(0deg);
+  opacity: 1;
+  transition: all 0.5s;
+  transform-origin: right;
+}
+.box13 .box-text {
+  transform: rotateY(90deg);
+  opacity: 0;
+  transform-origin: left;
+  background: #333333;
+  border: 10px solid #333;
+  transition: all 0.5s;
+  transition-delay: 0.5s;
+}
+.box13:hover .radius {
+  transform: rotateZ(0deg) rotateY(90deg);
+  opacity: 0;
+}
+.box13:hover .box-text {
+  transform: rotateY(0deg);
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+}
+.box14 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+.box14 .box-text {
+  transform: scale(0.4);
+  background: #333333;
+  border: 10px solid #333;
+  transition: all 0.5s;
+  transition-delay: 0.3s;
+}
+.box14:hover .radius {
+  transform: scale(0.4) rotateZ(720deg);
+  opacity: 0;
+}
+.box14:hover .box-text {
+  transform: scale(1) rotateZ(720deg);
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+}
+.box15 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  transform: rotateZ(0deg);
+  transition: all 0.5s;
+  transform-origin: right;
+}
+.box15 .box-text {
+  background: #333333;
+  border: 10px solid #333;
+  opacity: 1;
+  transition: all 0.5s;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.box15:hover .radius {
+  transform: rotateZ(-120deg);
+}
+.box15:hover .box-text {
+  top: 0px;
+  left: 0px;
+}
+.box16 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+}
+.box16 .box-text {
+  background: #00000070;
+  transition: all 0s;
+}
+.box16 .box-text h3 {
+  transform: scale(0);
+  transition: all 0.8s;
+}
+.box16 .box-text p {
+  transform: scale(0);
+  transition: all 0.8s;
+}
+.box16:hover .radius {
+  transform: rotateZ(0deg);
+}
+.box16:hover .box-text h3 {
+  transform: scale(1);
+}
+.box16:hover .box-text p {
+  transform: scale(1);
+}
+.box17 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  transform: rotateY(0deg);
+  transition: all 0.5s;
+  transform-origin: right;
+}
+.box17 .box-text {
+  background: #333333;
+  border: 10px solid #333;
+  opacity: 1;
+  transition: all 0.5s;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.box17:hover .radius {
+  transform: rotateY(-180deg);
+}
+.box17:hover .box-text {
+  top: 0px;
+  left: 0px;
+}
+.box18 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+}
+.box18 .box-text {
+  background: #00000070;
+  transform: scale(0);
+  transition: all 0.3s;
+}
+.box18:hover .radius {
+  transform: rotateZ(0deg);
+}
+.box18:hover .box-text {
+  transform: scale(1);
+}
+.box19 .radius {
+  border: 10px solid #ffffff83;
+  background: url(../img/4.jpg) no-repeat center;
+  transform: rotateX(0deg) translateZ(200px);
+  transition: all 0.5s;
+  transform-origin: bottom;
+  opacity: 1;
+}
+.box19 .box-text {
+  background: #333333;
+  border: 10px solid #333;
+  opacity: 1;
+  transition: all 0.5s;
+  top: 0;
+  left: 0;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+}
+.box19:hover .radius {
+  transform: rotateX(-90deg);
+  opacity: 0.5;
+}
+.box19:hover .box-text {
+  transform: rotateX(0deg);
+  transition: all 0s;
+  transition-delay: 0.5s;
+  top: 0px;
+  left: 0px;
+}
+/*# sourceMappingURL=./style.css.map */

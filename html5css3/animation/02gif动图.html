@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="lufei"></div>
+    <style>
+        .lufei{
+            width: 658px;
+            height: 494px;
+            background: url(lufei.png);
+            animation-name: myLufei;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(16,start);
+            /* transform: scale(0.2); */
+            /* transform-origin: top left; */
+        }
+        @keyframes  myLufei{
+            from{
+                background-position-x: 0;
+            }
+            to{
+                /* 9870px */
+                background-position-x: -10528px;
+                /* background-position-x: -9870px; */
+
+
+            }
+        }
+    </style>
+</body>
+</html>
