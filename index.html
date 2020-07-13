@@ -16,10 +16,12 @@
         }
         h1{
             text-align: center;
+            margin-top: 60px;
+            margin-bottom: 25px;
             color: rgb(255, 179, 0);
         }
         .layout .row .col{
-            padding: 10px;
+            padding: 10px 35px;
         }
         .layout .row .col a{
             text-decoration: none;
@@ -45,10 +47,31 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">LAO</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active top-li"><a href="javascript:;">HTML5&CSS3</a></li>
+              <li class="top-li"><a href="javascript:;">Bootstrap</a></li>
+              <li class="top-li"><a href="javascript:;">JS&JQ</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
     <div class="layout">
         <div class="container">
-            <div class="row">
-                <h1>JS&JQ</h1>
+            <div class="row top">
+                <h1>HTML5&CSS3</h1>
                 <div class="col-md-3 col">
                     <a href="https://jjj66666.github.io/html5css3/3D-book/"><div class="box">3D立体书</div></a>
                 </div>
@@ -63,7 +86,22 @@
                 </div>
 
             </div>
-            <div class="row">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row top">
                 <h1>Bootstrap</h1>
                 <div class="col-md-6 col">
                     <a href="https://jjj66666.github.io/Bootstrap/car/"><div class="box">汽车出售界面</div></a>
@@ -73,17 +111,29 @@
                 </div>
 
             </div>
-
-            <div class="row">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row top">
                 <h1>JS&JQ</h1>
                 <div class="col-md-4 col">
-                    <a href="https://jjj66666.github.io/JSJQ/"><div class="box"></div></a>
                 </div>
                 <div class="col-md-4 col">
                     <a href="https://jjj66666.github.io/JSJQ/"><div class="box">你想要的都在里面</div></a>
                 </div>
                 <div class="col-md-4 col">
-                    <a href="https://jjj66666.github.io/JSJQ/"><div class="box"></div></a>
                 </div>
 
             </div>
@@ -91,6 +141,18 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script>
+        $('.navbar .container .collapse>ul').find('li.top-li').click(function () {
+            var index = $(this).index()
+            console.log($('ul>li.top-li'));
+            console.log($(this));
+            console.log(index);
+            $(this).addClass('active').siblings().removeClass('active')
+            $('html').animate({
+                scrollTop: $('.top').eq($(this).index()).offset().top + 'px'
+            }, 500)
+        })
+    </script>
 </body>
 
 </html>
