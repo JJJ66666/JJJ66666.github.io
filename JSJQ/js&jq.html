@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS&JQ</title>
+    <script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        ul,
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .warp {
+            /* margin-top: 50px; */
+            padding-top: 50px;
+            width: 1170px;
+            margin: 20px auto;
+        }
+
+        .warp .firstUl {
+            display: inline-block;
+            display: flex;
+            width: 100%;
+
+            background-color: #cccccc;
+            /* overflow: hidden; */
+            vertical-align: middle;
+        }
+
+        .warp .firstUl>li {
+            background-color: #333333;
+            color: #ffffff;
+            /* float: left; */
+            text-align: center;
+            flex: 1;
+            padding: 10px 20px;
+            border: 1px solid #eeeeee;
+            border-left: none;
+        }
+
+        .warp .firstUl>li.actives {
+            background-color: #6d6c6c;
+            margin-top: -19px;
+            padding: 20px;
+            box-shadow: 0px 0px 26px #6d6d6d;
+
+            border-bottom: none;
+            /* border-right:  1px solid #eeeeee; */
+
+        }
+
+        .warp .secondUl>li {
+            background-color: #6d6c6c;
+            color: #ffffff;
+            display: none;
+            box-shadow: 0px 0px 26px #6d6d6d;
+            /* float: left; */
+            padding: 30px 0px;
+        }
+
+        .warp .secondUl>li.actives {
+            display: block;
+            width: 100%;
+            height: 450px;
+            text-align: center;
+
+        }
+
+        /* ======================== */
+
+
+        .warp-lu .screen {
+            width: 400px;
+            overflow: hidden;
+            display: inline-block;
+            position: relative;
+        }
+
+        .warp-lu .screen ul.content {
+            min-width: 2000px;
+            /* height: 500px; */
+            /* margin-left: 150px; */
+        }
+
+        .warp-lu .screen ul li {
+            float: left;
+            padding: 0 50px;
+        }
+
+        .warp-lu .screen .pagination {
+            position: absolute;
+            bottom: 10px;
+            left: 38%;
+            width: 25%;
+        }
+
+        .warp-lu .screen .contorl button {
+            position: absolute;
+            font-size: 35px;
+            padding: 4px 14px;
+            background-color: #cccccc65;
+            border-radius: 50%;
+            border: none;
+            color: #555555;
+            outline: none;
+        }
+
+        .warp-lu .screen .contorl .right {
+
+            right: 0;
+            top: 50%;
+        }
+
+        .warp-lu .screen .contorl .left {
+            left: 0;
+            top: 50%;
+        }
+
+        .warp-lu .screen .pagination>li {
+            background-color: #cccccc;
+            border: 1px solid #666666;
+            padding: 6px;
+            margin: 3%;
+            border-radius: 50%;
+        }
+
+        .warp-lu .screen .pagination>li.active {
+            background-color: #666666;
+            color: #cccccc;
+        }
+
+        /* ============================== */
+        .layout {
+            width: 450px;
+            height: 450px;
+            position: relative;
+            top: 0;
+            left: 32%;
+        }
+
+        .layout img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .layout .box {
+            width: 77%;
+            height: 100%;
+            background: url('./imgs/123.jpg') no-repeat;
+            background-size: auto 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .layout input {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            /* bottom: 50%; */
+            bottom: 0;
+            left: 0;
+            z-index: 9;
+            opacity: 0;
+        }
+
+        .layout .decorate {
+            width: 100%;
+            height: 10px;
+            background: rgba(153, 136, 136, 0.596);
+            position: absolute;
+            bottom: 0;
+            margin: 0 10px 10px 0;
+            z-index: 8;
+        }
+
+        .layout .decorate i {
+            content: '';
+            width: 10px;
+            height: 100%;
+            background: white;
+            /* overflow: hidden; */
+            display: block;
+            position: absolute;
+            left: 0;
+            margin-left: -1%;
+
+        }
+
+        /* ===================== */
+        #increase {
+            border: none;
+            outline: none;
+        }
+
+        .f-layout {
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .f-layout .f-box {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .f-layout .f-box img {
+            width: 100%;
+        }
+
+        .f-layout .f-box .cover {
+            background: rgba(0, 0, 0, 0.226);
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+        .f-layout .enlargement {
+            width: 200px;
+            height: 200px;
+            background: url('./imgs/122.jpg') no-repeat;
+            display: inline-block;
+            background-position-x: 0;
+            background-position-y: 0px;
+        }
+
+        /* ================ */
+        .posi-li {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .s-layout {
+            width: 500px;
+            /* background: red; */
+            position: relative;
+            overflow: hidden;
+            margin: 50px auto;
+        }
+
+        .s-layout img {
+            vertical-align: middle;
+            width: 400px;
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .7s;
+        }
+
+        .s-layout img:first-child {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="warp">
+        <ul class="firstUl">
+            <li class="">轮播图</li>
+            <li>拨拉框</li>
+            <li>放大镜</li>
+            <li class="actives">选项卡</li>
+
+        </ul>
+        <ul class="secondUl">
+            <li class="">
+                <div class="warp-lu">
+                    <div class="screen">
+                        <ul class="content">
+                            <li><img src="./imgs/img-01.jpg" alt=""></li>
+                            <li><img src="./imgs/img-02.jpg" alt=""></li>
+                            <li><img src="./imgs/img-03.jpg" alt=""></li>
+                            <li><img src="./imgs/img-04.jpg" alt=""></li>
+                            <li><img src="./imgs/img-05.jpg" alt=""></li>
+                        </ul>
+                        <ul class="pagination">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="contorl">
+                            <button class="left">
+                                <</button> <button class="right">>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="layout">
+                    <img src="./imgs/122.jpg" alt="">
+                    <div class="box"></div>
+                    <input class="slide" value="77" type="range" min="0" max="100" step="1">
+                    <div class="decorate"><i class="fa fa-arrows-h"></i></div>
+
+                </div>
+            </li>
+            <li>
+                <div class="f-layout">
+                    <select name="increase" id="increase">
+                        <option value="2">两倍</option>
+                        <option value="4">四倍</option>
+                        <option value="8">八倍</option>
+
+                    </select>
+                    <br>
+                    <div class="f-box">
+                        <img src="./imgs/122.jpg" alt="">
+                        <div class="cover"></div>
+                    </div>
+                    <div class="enlargement"></div>
+                </div>
+            </li>
+            <li class="posi-li actives">
+                <div class="s-layout">
+                    <img src="./imgs/a1.png" alt="">
+                    <img src="./imgs/a2.png" alt="">
+                    <img src="./imgs/a3.png" alt="">
+                    <img src="./imgs/a4.png" alt="">
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <script>
+        $('.firstUl>li').on('click', function () {
+            $(this).addClass('actives').siblings().removeClass('actives')
+            // console.log($(this).index());
+            var index = $(this).index()
+            // console.log(index);
+            $('.secondUl>li').eq(index).addClass('actives').siblings().removeClass('actives')
+            // console.log($('.secondUl li').eq(index));
+        })
+
+        // ===================
+        $('.content>li').attr('title', function (index) {
+            return index
+        })
+        //filter() 方法返回符合一定条件的元素。
+        function filterByIndex(n) {
+            return $('.content>li').filter(function (index) {
+                return $(this).attr('title') == n
+            })
+        }
+
+        function nextPic() {
+            $('.content').animate({
+                marginLeft: '-400px'
+            }, function () {
+                $('.content').children().first().appendTo($('.content'))
+                $('.content').css({
+                    marginLeft: 0
+                })
+            })
+        }
+
+        function prevPic() {
+            $('.content').css({
+                marginLeft: '-400px'
+            }).animate({
+                marginLeft: '0'
+            })
+        }
+        //点击小圆点
+        $('.pagination>li').click(function () {
+            var currentIndex = $('.content').children().first().attr('title')
+            var prepareIndex = $(this).index()
+            $(this).addClass('active').siblings().removeClass('active')
+            if (currentIndex < prepareIndex) {
+                $('.content').children().first().after(filterByIndex(prepareIndex))
+
+                nextPic()
+
+            } else {
+                $('.content').children().first().before(filterByIndex(prepareIndex))
+
+                prevPic()
+
+            }
+
+        })
+        //点击下一张
+        $('.contorl button').last().click(function () {
+            var currentIndex = $('.content').children().first().attr('title')
+
+            var prepareIndex = ++currentIndex > $('.content>li').length - 1 ? 0 : currentIndex
+
+            $('.content').children().first().after(filterByIndex(prepareIndex))
+
+            nextPic()
+            $('.pagination>li').eq(prepareIndex).addClass('active').siblings().removeClass('active')
+
+        })
+
+        //点击上一张
+        $('.contorl button').first().click(function () {
+            var currentIndex = $('.content').children().first().attr('title')
+            var prepareIndex = --currentIndex < 0 ? $('.content>li').length - 1 : currentIndex
+            $('.content').children().first().before(filterByIndex(prepareIndex))
+
+            prevPic()
+            $('.pagination>li').eq(prepareIndex).addClass('active').siblings().removeClass('active')
+
+        })
+
+        // =======================
+        var decorate = document.querySelector('.decorate i')
+        var box = document.querySelector('.box')
+        var slide = document.querySelector('.slide')
+
+
+        slide.oninput = function () {
+            console.log(this.value)
+            box.style.width = this.value + '%'
+            decorate.style.left = this.value + '%'
+        }
+
+
+        // =======================
+        var increaseDom = document.querySelector('#increase')
+        var increase = 2
+        increaseDom.onchange = function () {
+            increase = this.value
+            xxx()
+        }
+        var fBox = document.querySelector('.f-layout .f-box')
+        var cover = document.querySelector('.cover')
+        var enlargement = document.querySelector('.enlargement')
+
+
+        function xxx() {
+
+
+            cover.style.width = fBox.clientWidth / increase + 'px'
+            cover.style.height = fBox.clientHeight / increase + 'px'
+            enlargement.style.backgroundSize = increase * 100 + '%'
+
+
+
+            fBox.onmousemove = function (event) {
+
+                var x = event.pageX - fBox.offsetLeft - cover.offsetWidth / 2
+                var y = event.pageY - fBox.offsetTop - cover.offsetHeight / 2
+
+                console.log(x, y)
+                x = x < 0 ? 0 : x
+                y = y < 0 ? 0 : y
+                x = x > fBox.clientWidth - cover.clientWidth ? fBox.clientWidth - cover.clientWidth : x
+                y = y > fBox.clientHeight - cover.clientHeight ? fBox.clientHeight - cover.clientHeight : y
+                cover.style.left = x + 'px'
+                cover.style.top = y + 'px'
+
+                enlargement.style.backgroundPositionX = x * -increase + 'px'
+                enlargement.style.backgroundPositionY = y * -increase + 'px'
+
+
+            }
+        }
+        xxx()
+        // ====================
+        var sLayout = document.querySelector('.s-layout')
+
+        var sImgs = document.querySelectorAll('.s-layout img')
+
+        sImgs.forEach(function (element, index) {
+            element.subscript = index
+            element.style.left = index * sLayout.offsetWidth / sImgs.length + 'px'
+            element.addEventListener('click', function () {
+                var subscript = this.subscript
+                sImgs.forEach(function (element, index) {
+                    if (index <= subscript) {
+                        element.style.left = (sLayout.offsetWidth - sImgs[0].offsetWidth) / (
+                            sImgs.length - 1) * index + 'px'
+                        console.log(element.style.left);
+                    } else {
+                        element.style.left = sImgs[0].offsetWidth + (sLayout.offsetWidth -
+                            sImgs[0].offsetWidth) / (sImgs.length - 1) * (index - 1) + 'px'
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
