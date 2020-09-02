@@ -1,0 +1,89 @@
+.menu /deep/ .van-search {
+  position: fixed;
+  background: #303caa;
+  z-index: 10;
+  width: 100%;
+}
+.menu .menu-layout /deep/ .van-tabs--line .van-tabs__wrap {
+  height: 80px;
+}
+.menu .menu-layout /deep/ .van-tabs__nav--line {
+  border-color: #303caa;
+  position: fixed;
+  width: 100%;
+  box-sizing: content-box;
+  padding: 0.4rem 0;
+  margin-top: 50px;
+  height: auto;
+}
+.menu .menu-layout .title-img-box {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.menu .menu-layout .title-img-box .title-img {
+  width: 60%;
+}
+.menu .menu-layout .title-text {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.menu .menu-layout .products-layout {
+  padding: 20px 20px;
+  margin-top: 60px;
+}
+.menu .menu-layout .products-layout .products-box {
+  display: flex;
+  padding: 10px 20px;
+  box-shadow: 0 0 13px 1px #acacac;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.menu .menu-layout .products-layout .products-box .img-box {
+  flex: 1;
+}
+.menu .menu-layout .products-layout .products-box .text-box {
+  flex: 2;
+  margin-left: 20px;
+  font-weight: 600;
+}
+.menu .menu-layout .products-layout .products-box .text-box .name {
+  font-size: 16px;
+  margin: 3px 0;
+  color: #303CAA;
+}
+.menu .menu-layout .products-layout .products-box .text-box .price {
+  font-size: 16px;
+  margin: 8px 0;
+  color: orangered;
+}
+.menu .search-pop {
+  width: calc(100% - 40px);
+  position: fixed;
+  height: 100%;
+  z-index: 9;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  padding: 60px 20px 0;
+}
+.menu .search-pop .search-list {
+  width: calc(100% - 30px);
+  background-color: #f8f8f8;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+}
+.menu .search-pop .search-list .list-name {
+  line-height: 40px;
+}
+.menu .search-pop .search-list .list-img {
+  width: 200px;
+  background-image: url('http://www.kangliuyong.com:10002/images/product_large/IMG_0378_02.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 40px;
+}
+/*# sourceMappingURL=./Menu.css.map */

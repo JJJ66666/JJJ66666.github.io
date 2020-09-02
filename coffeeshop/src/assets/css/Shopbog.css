@@ -1,0 +1,86 @@
+.notlogin {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.notlogin .button-box {
+  display: inline-block;
+}
+.shopbog /deep/ .van-nav-bar--fixed {
+  background-color: #303CAA;
+}
+.shopbog /deep/ .van-nav-bar--fixed .van-nav-bar__title {
+  color: #ffffff;
+}
+.shopbog /deep/ .van-nav-bar--fixed .van-nav-bar__right {
+  color: #ffffff;
+}
+.shopbog /deep/ .van-swipe-cell {
+  margin-bottom: 20px;
+}
+.shopbog .shopbog-layout {
+  padding-top: 55px;
+  padding-bottom: 80px;
+}
+.shopbog .shopbog-layout /deep/ .van-cell {
+  padding: 0;
+}
+.shopbog .shopbog-layout .card {
+  margin: 0 10px;
+  width: calc(100% - 20px);
+  height: 2.13333rem;
+  box-shadow: 0 0 8px 0 #999;
+  background-color: #ffffff;
+}
+.shopbog .shopbog-layout .card .card-left {
+  width: 50px;
+  line-height: 80px;
+  margin-top: 30px;
+}
+.shopbog .shopbog-layout .card .card-left /deep/ .van-checkbox__icon--round .van-icon {
+  margin-left: 15px;
+}
+.shopbog .shopbog-layout .card .card-center {
+  width: 72px;
+  padding: 4px;
+}
+.shopbog .shopbog-layout .card .card-right {
+  width: calc(100% - 130px);
+  padding: 4px 0;
+  height: calc(100% - 8px);
+}
+.shopbog .shopbog-layout .card .card-right .commodity {
+  width: calc(100% - 20px);
+  height: 100%;
+  margin: 0 auto;
+}
+.shopbog .shopbog-layout .card .card-right .commodity .com-name {
+  font-size: 14px;
+}
+.shopbog .shopbog-layout .card .card-right .commodity .com-name .cn span {
+  font-size: 12px;
+  color: #999;
+}
+.shopbog .shopbog-layout .card .card-right .commodity .com-name .en {
+  color: #999;
+}
+.shopbog .shopbog-layout .card .card-right .commodity .com-num {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ee0a24;
+}
+.shopbog .shopbog-layout /deep/ .van-button--square {
+  height: 100%;
+}
+.shopbog .shopbog-layout /deep/ .van-submit-bar {
+  bottom: 49px;
+}
+.shopbog .shopbog-layout /deep/ .van-submit-bar .van-submit-bar__button--danger {
+  background: #303CAA;
+}
+/*# sourceMappingURL=./Shopbog.css.map */

@@ -1,0 +1,37 @@
+{
+  "id": "1991673",
+  "name": "1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7947795",
+      "name": "菜单",
+      "font_class": "caidan1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "13676740",
+      "name": "购物袋",
+      "font_class": "gouwudai",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "14126655",
+      "name": "我 的",
+      "font_class": "wodedangxuan",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "5831720",
+      "name": "咖啡",
+      "font_class": "kafei",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    }
+  ]
+}

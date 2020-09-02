@@ -1,0 +1,110 @@
+//未登录
+.notlogin {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .button-box {
+        display: inline-block;
+    }
+}
+
+.my {
+    .my-warp {
+        width: calc(~"100% - 40px");
+        height: 500px;
+        overflow: hidden;
+        background-color: #f8f8f8;
+        padding: 50px 20px;
+
+
+        .my-bg {
+            width: 150%;
+            height: 300px;
+            background-color: #303CAA;
+            border-radius: 0 0 300px 300px;
+            margin-top: -50px;
+            margin-left: -25%;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+
+            /deep/.van-uploader {
+                width: 100%;
+                height: 100%;
+
+                .van-uploader__wrapper {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                /deep/.van-uploader__upload {
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                }
+            }
+        }
+
+        .my-layout {
+            margin-top: -200px;
+            width: 100%;
+            position: relative;
+            .my-title {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            .my-head {
+                // height: 80px;
+                background-color: #fff;
+                width: calc(~"100% - 20px");
+                padding: 10px;
+                border-radius: 10px;
+
+                /deep/.van-cell {
+                    // padding-left: 0;
+                    font-size: 16px;
+                }
+
+                .head {
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    .img-box {
+                        width: 80px;
+
+                    }
+
+                    .name-box {
+                        margin-left: 20px;
+
+                        .name {
+                            font-size: 16px;
+                            color: #303CAA;
+                            font-weight: 600;
+                            margin-bottom: 8px;
+                        }
+
+                        .profile {
+                            color: #999;
+                        }
+                    }
+
+                }
+
+            }
+
+            .bottom-img {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+}

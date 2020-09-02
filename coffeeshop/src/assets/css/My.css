@@ -1,0 +1,84 @@
+.notlogin {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.notlogin .button-box {
+  display: inline-block;
+}
+.my .my-warp {
+  width: calc(100% - 40px);
+  height: 500px;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  padding: 50px 20px;
+}
+.my .my-warp .my-bg {
+  width: 150%;
+  height: 300px;
+  background-color: #303CAA;
+  border-radius: 0 0 300px 300px;
+  margin-top: -50px;
+  margin-left: -25%;
+}
+.my .my-warp .my-bg /deep/ .van-uploader {
+  width: 100%;
+  height: 100%;
+}
+.my .my-warp .my-bg /deep/ .van-uploader .van-uploader__wrapper {
+  width: 100%;
+  height: 100%;
+}
+.my .my-warp .my-bg /deep/ .van-uploader /deep/ .van-uploader__upload {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.my .my-warp .my-layout {
+  margin-top: -200px;
+  width: 100%;
+  position: relative;
+}
+.my .my-warp .my-layout .my-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.my .my-warp .my-layout .my-head {
+  background-color: #fff;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-radius: 10px;
+}
+.my .my-warp .my-layout .my-head /deep/ .van-cell {
+  font-size: 16px;
+}
+.my .my-warp .my-layout .my-head .head {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.my .my-warp .my-layout .my-head .head .img-box {
+  width: 80px;
+}
+.my .my-warp .my-layout .my-head .head .name-box {
+  margin-left: 20px;
+}
+.my .my-warp .my-layout .my-head .head .name-box .name {
+  font-size: 16px;
+  color: #303CAA;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.my .my-warp .my-layout .my-head .head .name-box .profile {
+  color: #999;
+}
+.my .my-warp .my-layout .bottom-img {
+  width: 100%;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=./My.css.map */

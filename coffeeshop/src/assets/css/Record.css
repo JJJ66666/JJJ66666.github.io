@@ -1,0 +1,104 @@
+.record-layout {
+  background: #f8f8f8;
+  padding: 0px 20px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.record-layout /deep/ .van-tabs__nav--card {
+  margin: 0;
+  border-color: #303CAA;
+}
+.record-layout /deep/ .van-tabs__nav--card .van-tab {
+  border-right-color: #303CAA;
+}
+.record-layout /deep/ .van-tabs__nav--card .van-tab--active {
+  background: #303CAA;
+}
+.record-layout /deep/ .van-tabs__nav--card .van-tab {
+  color: #303CAA;
+}
+.record-layout /deep/ .van-tabs__nav--card .van-tab.van-tab--active {
+  color: #fff;
+}
+.record-layout .record-card .record-list {
+  width: calc(100% - 20px);
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+.record-layout .record-card .record-list .listTitle {
+  font-size: 14px;
+}
+.record-layout .record-card .record-list .listTitle span {
+  font-size: 14px;
+  line-height: 14px;
+  float: right;
+}
+.record-layout .record-card .record-list .listTitle /deep/ .van-icon {
+  font-size: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
+  transform: translateY(4px);
+  display: inline-block;
+}
+.record-layout .record-card .record-list .listData {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 5px;
+  width: calc(100% - 10px);
+  height: 80px;
+  background-color: #f8f8f8;
+}
+.record-layout .record-card .record-list .listData .card-center {
+  width: 80px;
+}
+.record-layout .record-card .record-list .listData .card-right {
+  width: calc(100% - 80px);
+  height: 100%;
+}
+.record-layout .record-card .record-list .listData .card-right .commodity {
+  width: calc(100% - 10px);
+  height: 100%;
+  margin-left: 10px ;
+}
+.record-layout .record-card .record-list .listData .card-right .commodity .com-name {
+  font-size: 14px;
+}
+.record-layout .record-card .record-list .listData .card-right .commodity .com-name .cn span {
+  font-size: 12px;
+  color: #999;
+}
+.record-layout .record-card .record-list .listData .card-right .commodity .com-name .en {
+  color: #999;
+}
+.record-layout .record-card .record-list .listData .card-right .commodity .com-num {
+  height: 100%;
+  font-size: 14px;
+  color: #ee0a24;
+}
+.record-layout .record-card .record-list .listData .card-right .commodity .com-num .price-box {
+  line-height: 80px;
+}
+.record-layout .record-card .record-list .listData .card-right .commodity .com-count {
+  height: 100%;
+  font-size: 14px;
+  margin: 0 10px;
+}
+.record-layout .record-card .record-list .listData .card-right .commodity .com-count .count-box {
+  line-height: 80px;
+}
+.record-layout .record-card .record-list .listTotal {
+  border-top: 1px dashed rgba(197, 197, 197, 0.533);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: right;
+  position: relative;
+  font-size: 14px;
+}
+.record-layout .record-card .record-list .listTotal span {
+  font-size: 16px;
+}
+.record-layout .record-card .record-list .date {
+  text-align: right;
+}
+/*# sourceMappingURL=./Record.css.map */

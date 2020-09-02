@@ -1,0 +1,107 @@
+.menu {
+    /deep/.van-search {
+        position: fixed;
+        background: rgb(48, 60, 170);
+        z-index: 10;
+        width: 100%;
+    }
+
+    .menu-layout {
+        /deep/.van-tabs--line .van-tabs__wrap {
+            height: 80px;
+        }
+
+        /deep/.van-tabs__nav--line {
+            border-color: rgb(48, 60, 170);
+            position: fixed;
+            width: 100%;
+            box-sizing: content-box;
+            padding: 0.4rem 0;
+            margin-top: 50px;
+            height: auto;
+        }
+
+        .title-img-box {
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+
+            .title-img {
+                width: 60%;
+            }
+
+        }
+
+        .title-text {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .products-layout {
+            padding: 20px 20px;
+            margin-top: 60px;
+
+            .products-box {
+                display: flex;
+                padding: 10px 20px;
+                box-shadow: 0 0 13px 1px #acacac;
+                border-radius: 10px;
+                margin-bottom: 20px;
+
+                .img-box {
+                    flex: 1;
+                }
+
+                .text-box {
+                    flex: 2;
+                    margin-left: 20px;
+                    font-weight: 600;
+
+                    .name {
+                        font-size: 16px;
+                        margin: 3px 0;
+                        color: #303CAA;
+                    }
+
+                    .price {
+                        font-size: 16px;
+                        margin: 8px 0;
+                        color: orangered;
+                    }
+                }
+            }
+        }
+    }
+
+    .search-pop {
+        width: calc(~"100% - 40px");
+        position: fixed;
+        height: 100%;
+        z-index: 9;
+        background: #ffffff;
+        top: 0;
+        left: 0;
+        padding: 60px 20px 0;
+
+        .search-list {
+            // display: block;
+            width: calc(~"100% - 30px");
+            background-color: #f8f8f8;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            color: #000;
+            font-weight: 400;
+            font-size: 14px;
+            .list-name{
+                line-height: 40px;
+            }
+            .list-img {
+                width: 200px;
+                background-image: url('http://www.kangliuyong.com:10002/images/product_large/IMG_0378_02.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 40px;
+            }
+        }
+    }
+}

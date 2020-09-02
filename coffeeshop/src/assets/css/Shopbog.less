@@ -1,0 +1,115 @@
+//未登录
+.notlogin {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .button-box {
+        display: inline-block;
+    }
+}
+
+//以登录
+.shopbog {
+    /deep/.van-nav-bar--fixed {
+        background-color: #303CAA;
+
+        .van-nav-bar__title {
+            color: #ffffff;
+        }
+
+        .van-nav-bar__right {
+            color: #ffffff;
+        }
+    }
+
+    /deep/.van-swipe-cell {
+        margin-bottom: 20px;
+        // box-shadow: 0 0 8px 0 #ccc;
+    }
+
+    .shopbog-layout {
+        padding-top: 55px;
+        padding-bottom: 80px;
+
+        /deep/.van-cell {
+            padding: 0;
+        }
+
+        .card {
+            margin: 0 10px;
+            width: calc(100% - 20px);
+            height: 2.13333rem;
+            box-shadow: 0 0 8px 0 #999;
+            background-color: #ffffff;
+
+            .card-left {
+                width: 50px;
+                line-height: 80px;
+                margin-top: 30px;
+
+                /deep/.van-checkbox__icon--round .van-icon {
+                    margin-left: 15px;
+                }
+            }
+
+            .card-center {
+                width: 72px;
+                padding: 4px;
+            }
+
+            .card-right {
+                width: calc(~"100% - 130px");
+                padding: 4px 0;
+                height: calc(~"100% - 8px");
+
+                .commodity {
+                    width: calc(~"100% - 20px");
+                    height: 100%;
+                    margin: 0 auto;
+
+                    .com-name {
+
+                        font-size: 14px;
+
+                        .cn {
+                            span {
+                                font-size: 12px;
+                                color: #999;
+                            }
+                        }
+
+                        .en {
+                            color: #999;
+
+                        }
+                    }
+
+                    .com-num {
+                        margin-top: 15px;
+                        font-size: 14px;
+                        color: #ee0a24;
+                    }
+                }
+            }
+        }
+
+        /deep/.van-button--square {
+            height: 100%;
+        }
+
+        /deep/.van-submit-bar {
+            bottom: 49px;
+
+            .van-submit-bar__button--danger {
+                background: #303CAA;
+            }
+        }
+
+    }
+}

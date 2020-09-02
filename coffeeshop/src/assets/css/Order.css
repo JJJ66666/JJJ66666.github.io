@@ -1,0 +1,134 @@
+.warp {
+  width: calc(100% - 20px);
+  background: #f8f8f8;
+  position: absolute;
+  padding: 60px 10px;
+}
+.warp .order-layout {
+  width: 100%;
+}
+.warp .order-layout .address-box {
+  width: calc(100% - 20px);
+  background-color: #ffffff;
+  padding: 10px;
+}
+.warp .order-layout .address-box .text {
+  font-size: 16px;
+  font-weight: 600;
+}
+.warp .order-layout .address-box .address-center {
+  padding: 5px 10px;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  padding-right: 100px;
+}
+.warp .order-layout .address-box .address-center .text {
+  margin-bottom: 10px;
+}
+.warp .order-layout .order-list {
+  width: calc(100% - 20px);
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+.warp .order-layout .order-list .listTitle {
+  font-size: 14px;
+}
+.warp .order-layout .order-list .listData {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  height: 80px;
+  background-color: #f8f8f8;
+}
+.warp .order-layout .order-list .listData .card-center {
+  width: 80px;
+}
+.warp .order-layout .order-list .listData .card-right {
+  width: calc(100% - 80px);
+  height: 100%;
+}
+.warp .order-layout .order-list .listData .card-right .commodity {
+  width: calc(100% - 20px);
+  height: 100%;
+  margin: 0 auto;
+}
+.warp .order-layout .order-list .listData .card-right .commodity .com-name {
+  font-size: 14px;
+}
+.warp .order-layout .order-list .listData .card-right .commodity .com-name .cn span {
+  font-size: 12px;
+  color: #999;
+}
+.warp .order-layout .order-list .listData .card-right .commodity .com-name .en {
+  color: #999;
+}
+.warp .order-layout .order-list .listData .card-right .commodity .com-num {
+  height: 100%;
+  font-size: 14px;
+  color: #ee0a24;
+}
+.warp .order-layout .order-list .listData .card-right .commodity .com-num .price-box {
+  line-height: 80px;
+}
+.warp .order-layout .order-list .listData .card-right .commodity .com-count {
+  height: 100%;
+  font-size: 14px;
+  margin: 0 10px;
+}
+.warp .order-layout .order-list .listData .card-right .commodity .com-count .count-box {
+  line-height: 80px;
+}
+.warp .order-layout .order-list .listTotal {
+  border-top: 1px dashed rgba(197, 197, 197, 0.533);
+  padding-top: 20px;
+  text-align: right;
+  position: relative;
+  font-size: 14px;
+}
+.warp .order-layout .order-list .listTotal span {
+  font-size: 16px;
+}
+.warp .order-layout .order-list .listTotal::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  left: -20px;
+  top: -10px;
+}
+.warp .order-layout .order-list .listTotal::after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  right: -20px;
+  top: -10px;
+}
+.warp /deep/ .van-submit-bar__button--danger {
+  background: #303CAA;
+  width: 100%;
+}
+.warp /deep/ .van-cell {
+  padding: 0;
+}
+.warp /deep/ .van-popup {
+  width: calc(100% - 40px);
+  padding: 20px;
+}
+.warp /deep/ .van-address-item__edit {
+  display: none;
+}
+.warp /deep/ .van-address-item .van-radio__icon--checked .van-icon,
+.warp .van-address-item__tag,
+.warp .van-address-list__add {
+  background-color: #303CAA;
+  border-color: #303CAA;
+}
+/*# sourceMappingURL=./Order.css.map */

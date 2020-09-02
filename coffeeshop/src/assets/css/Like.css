@@ -1,0 +1,88 @@
+.like-warp {
+  width: calc(100% - 40px);
+  overflow: hidden;
+  background-color: #f8f8f8;
+  padding: 50px 20px;
+}
+.like-warp .like-bg {
+  width: 150%;
+  height: 300px;
+  background-color: #303CAA;
+  border-radius: 0 0 300px 300px;
+  margin-top: -120px;
+  margin-left: -25%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.like-warp .like-layout {
+  margin-top: -145px;
+  width: 100%;
+  position: relative;
+}
+.like-warp .like-layout .like-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.like-warp .like-layout .like-head {
+  background-color: #fff;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-radius: 10px;
+}
+.like-warp .like-layout .like-head .head .listTitle {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+.like-warp .like-layout .like-head .head .like-list {
+  width: calc(100% - 20px);
+  padding: 10px;
+  background-color: #ffffff;
+  overflow-y: scroll;
+  height: 400px;
+}
+.like-warp .like-layout .like-head .head .like-list .listData {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  background-color: #f8f8f8;
+}
+.like-warp .like-layout .like-head .head .like-list .listData .cancel {
+  text-align: right;
+}
+.like-warp .like-layout .like-head .head .like-list .listData .cancel /deep/ .van-icon {
+  font-size: 16px;
+}
+.like-warp .like-layout .like-head .head .like-list .listData .card-center {
+  width: 80px;
+}
+.like-warp .like-layout .like-head .head .like-list .listData .card-right {
+  width: calc(100% - 80px);
+  height: 100%;
+}
+.like-warp .like-layout .like-head .head .like-list .listData .card-right .commodity {
+  width: calc(100% - 20px);
+  height: 100%;
+  margin: 0 auto;
+}
+.like-warp .like-layout .like-head .head .like-list .listData .card-right .commodity .com-name {
+  font-size: 14px;
+}
+.like-warp .like-layout .like-head .head .like-list .listData .card-right .commodity .com-name .cn span {
+  font-size: 12px;
+  color: #999;
+}
+.like-warp .like-layout .like-head .head .like-list .listData .card-right .commodity .com-name .en {
+  color: #999;
+}
+.like-warp .like-layout .like-head .head .like-list .listData .card-right .commodity .com-name .desc {
+  font-size: 12px;
+  color: #999;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+/*# sourceMappingURL=./Like.css.map */

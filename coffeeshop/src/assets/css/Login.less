@@ -1,0 +1,117 @@
+.Login {
+    padding: 20px 25px;
+    height: 100%;
+
+    // background-color: #ff7b7b;
+    /deep/ [class*=van-hairline]::after {
+        border: none;
+    }
+
+    /deep/ .van-overlay {
+        background-color:#01011662;
+    }
+
+    /deep/ .van-nav-bar__left,
+    .van-nav-bar__right {
+        padding: 0;
+    }
+
+    /deep/ .van-button--info {
+        background: #303CAA;
+        border: none;
+    }
+
+    .Login-text {
+        display: flex;
+        font-size: 20px;
+        font-weight: bold;
+        justify-content: center;
+
+        .icon {
+        background: #303CAA;
+
+            i {
+
+                font-size: 32px;
+                line-height: 36px;
+                color: #ffffff;
+                text-align: center;
+            }
+
+            width: 36px;
+            height: 36px;
+            // background-color: #cccccc;
+            border-radius: 50%;
+        }
+
+        .title {
+            font-size: 25px;
+            font-weight: 400;
+            margin-left: 10px;
+            line-height: 36px;
+            font-style: italic;
+        }
+    }
+
+    .round {
+        font-size: 30px;
+    }
+
+    .layout {
+        margin-top: 30%;
+
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #010116;
+        }
+
+        .p {
+            font-size: 28px;
+            color: #999999;
+            margin-top: 20px;
+        }
+
+        .layout-btn {
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .layout-register {
+            /deep/ .van-button--default {
+                border: none;
+            }
+
+            .popup {
+                margin: 30px 20px;
+
+                .title {
+                    font-size: 26px;
+                    margin-bottom: 25px;
+                    color: #010116;
+
+                }
+
+                .popup-btn {
+                    margin-top: 30px;
+                }
+
+                ::-webkit-input-placeholder {
+                    color: #010116;
+                    font-weight: 500;
+                }
+
+            }
+        }
+    }
+
+    /deep/ .van-cell {
+        padding-left: 0;
+        padding-right: 0;
+        border-bottom: 1px solid #999999;
+    }
+
+    /deep/ .van-cell::after {
+        border: none;
+    }
+}

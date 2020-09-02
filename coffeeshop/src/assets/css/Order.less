@@ -1,0 +1,165 @@
+.warp {
+    width: calc(~"100% - 20px");
+    // height: 100%;
+    background: #f8f8f8;
+    position: absolute;
+    padding: 60px 10px;
+
+    .order-layout {
+        width: 100%;
+        
+        .address-box {
+            width: calc(~"100% - 20px");
+            background-color: #ffffff;
+            padding: 10px;
+
+            .text {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .address-center {
+                padding: 5px 10px;
+                margin-top: 20px;
+                background-color: #f8f8f8;
+                font-size: 14px;
+                padding-right: 100px;
+                .text{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .order-list {
+            width: calc(~"100% - 20px");
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffffff;
+
+            .listTitle {
+                font-size: 14px;
+            }
+
+            .listData {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                padding: 10px;
+                width: calc(~"100% - 20px");
+                height: 80px;
+                background-color: #f8f8f8;
+
+                .card-center {
+                    width: 80px;
+                }
+
+                .card-right {
+                    width: calc(~"100% - 80px");
+                    height: 100%;
+
+                    .commodity {
+                        width: calc(~"100% - 20px");
+                        height: 100%;
+                        margin: 0 auto;
+
+                        .com-name {
+                            font-size: 14px;
+
+                            .cn {
+                                span {
+                                    font-size: 12px;
+                                    color: #999;
+                                }
+                            }
+
+                            .en {
+                                color: #999;
+                            }
+                        }
+
+                        .com-num {
+                            height: 100%;
+                            font-size: 14px;
+                            color: #ee0a24;
+
+                            .price-box {
+                                line-height: 80px;
+                            }
+                        }
+
+                        .com-count {
+                            height: 100%;
+                            font-size: 14px;
+                            margin: 0 10px;
+
+                            .count-box {
+                                line-height: 80px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .listTotal {
+                border-top: 1px dashed rgba(197, 197, 197, 0.533);
+                padding-top: 20px;
+                text-align: right;
+                position: relative;
+                font-size: 14px;
+
+                span {
+                    font-size: 16px;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background-color: #f8f8f8;
+                    border-radius: 50%;
+                    left: -20px;
+                    top: -10px;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background-color: #f8f8f8;
+                    border-radius: 50%;
+                    right: -20px;
+                    top: -10px;
+                }
+            }
+        }
+
+
+    }
+
+    /deep/.van-submit-bar__button--danger {
+        background: #303CAA;
+        width: 100%;
+    }
+
+    /deep/.van-cell {
+        padding: 0;
+    }
+
+    /deep/.van-popup {
+        width: calc(~"100% - 40px");
+        padding: 20px;
+    }
+
+    /deep/.van-address-item__edit {
+        display: none;
+    }
+
+    /deep/.van-address-item .van-radio__icon--checked .van-icon,
+    .van-address-item__tag,
+    .van-address-list__add {
+        background-color: #303CAA;
+        border-color: #303CAA;
+    }
+}
