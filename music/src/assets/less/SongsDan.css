@@ -1,0 +1,232 @@
+.songsdan {
+  color: #fff;
+}
+.songsdan .songsdan-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.songsdan .songsdan-bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: inherit;
+  filter: blur(20px);
+  z-index: 2;
+}
+.songsdan .songsdan-box {
+  position: relative;
+  z-index: 3;
+}
+.songsdan .songsdan-box /deep/ .van-nav-bar {
+  background-color: transparent;
+}
+.songsdan .songsdan-box /deep/ [class*=van-hairline]::after {
+  border: none;
+}
+.songsdan .songsdan-box /deep/ .van-nav-bar .van-icon {
+  color: #fff;
+}
+.songsdan .songsdan-box /deep/ .van-nav-bar__title {
+  color: #fff;
+}
+.songsdan .songsdan-box .title-box .title-bg {
+  width: 100%;
+  background-color: #0c0c0c;
+  height: 50px;
+  position: fixed;
+  z-index: 0;
+}
+.songsdan .songsdan-box .songsdan-s-box {
+  padding-top: 50px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-desc {
+  padding: 20px;
+  padding-right: 0;
+  margin-bottom: 20px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-desc .img-box {
+  width: 120px;
+  margin-right: 20px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-desc .img-box img {
+  border-radius: 10px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-desc .text-box {
+  width: calc(100% - 140px);
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-desc .text-box .text-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-desc .text-box .user-box {
+  padding: 8px 0;
+  margin-bottom: 10px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-desc .text-box .user-box .user-img {
+  width: 30px;
+  margin-right: 10px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-desc .text-box .user-box .user-img img {
+  border-radius: 50%;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-desc .text-box .user-box .user-name {
+  line-height: 30px;
+  font-size: 14px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-desc .text-box .text-desc {
+  font-size: 12px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-desc .text-box .text-desc .jieshao {
+  width: 80%;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-desc .text-box .text-desc .icon-box {
+  margin-right: 5px;
+  line-height: 34px;
+  font-size: 14px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-list-box {
+  width: 100%;
+  padding: 20px 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #0c0c0c;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-list-box .playAll {
+  background-color: #0c0c0c;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-list-box .playAll .img-box {
+  width: 20px;
+  margin-right: 20px;
+  margin-top: 1px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-list-box .playAll .text-box {
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-list-box .songsdan-list {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-list-box .songsdan-list .paiming {
+  color: #999999;
+  padding: 0 10px;
+  line-height: 41px;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-list-box .songsdan-list .songs-detail {
+  width: calc(100% - 80px);
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-list-box .songsdan-list .songs-detail .songs-name {
+  font-size: 16px;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-list-box .songsdan-list .songs-detail .songs-ar {
+  font-size: 12px;
+  color: #bbb;
+}
+.songsdan .songsdan-box .songsdan-s-box .songsdan-list-box .songsdan-list .play-img-box {
+  width: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.songsdan .songsdan-box /deep/ .van-popup--bottom {
+  overflow-x: hidden;
+}
+.songsdan .songsdan-box .pop-box {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+.songsdan .songsdan-box .pop-box .pop-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
+.songsdan .songsdan-box .pop-box .pop-bg::after {
+  content: "";
+  width: 121%;
+  height: 101%;
+  position: absolute;
+  left: -33px;
+  top: 0;
+  background: inherit;
+  filter: blur(10px);
+  z-index: 0;
+}
+.songsdan .songsdan-box .pop-box .pop-content-box {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 0 20px;
+  padding-top: 60px;
+}
+.songsdan .songsdan-box .pop-box .pop-content-box .pop-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #999;
+}
+.songsdan .songsdan-box .pop-box .pop-content-box .pop-header .img-box {
+  padding: 0 100px;
+  width: calc(100% - 200px);
+}
+.songsdan .songsdan-box .pop-box .pop-content-box .pop-header .img-box img {
+  border-radius: 20px;
+}
+.songsdan .songsdan-box .pop-box .pop-content-box .pop-header .text-box {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+.songsdan .songsdan-box .pop-box .pop-content-box .pop-content {
+  padding-top: 30px;
+}
+.songsdan .songsdan-box .pop-box .pop-content-box .pop-content .label {
+  font-size: 14px;
+}
+.songsdan .songsdan-box .pop-box .pop-content-box .pop-content .label span {
+  font-size: 12px;
+  margin: 5px;
+  padding: 3px 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.songsdan .songsdan-box .pop-box .pop-content-box .pop-content .content-text {
+  font-size: 14px;
+  margin-top: 20px;
+  padding: 0 10%;
+}
+/*# sourceMappingURL=./SongsDan.css.map */

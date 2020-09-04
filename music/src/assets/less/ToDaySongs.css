@@ -1,0 +1,76 @@
+.todaysongs /deep/ .van-nav-bar {
+  background-color: #0c0c0c;
+}
+.todaysongs /deep/ .van-nav-bar .van-icon {
+  color: #fff;
+}
+.todaysongs /deep/ .van-nav-bar__title {
+  color: #fff;
+}
+.todaysongs .songsdan-s-box {
+  padding-top: 50px;
+}
+.todaysongs .songsdan-s-box .songsdan-list-box {
+  width: 100%;
+  padding: 20px 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #0c0c0c;
+  color: #fff;
+}
+.todaysongs .songsdan-s-box .songsdan-list-box .playAll {
+  background-color: #0c0c0c;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.todaysongs .songsdan-s-box .songsdan-list-box .playAll .img-box {
+  width: 20px;
+  margin-right: 20px;
+  margin-top: 1px;
+}
+.todaysongs .songsdan-s-box .songsdan-list-box .playAll .text-box {
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+}
+.todaysongs .songsdan-s-box .songsdan-list-box .songsdan-list {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.todaysongs .songsdan-s-box .songsdan-list-box .songsdan-list .paiming {
+  color: #999999;
+  padding: 0 10px;
+  line-height: 41px;
+}
+.todaysongs .songsdan-s-box .songsdan-list-box .songsdan-list .songs-detail {
+  width: calc(100% - 80px);
+}
+.todaysongs .songsdan-s-box .songsdan-list-box .songsdan-list .songs-detail .songs-name {
+  font-size: 16px;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.todaysongs .songsdan-s-box .songsdan-list-box .songsdan-list .songs-detail .songs-ar {
+  font-size: 12px;
+  color: #bbb;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.todaysongs .songsdan-s-box .songsdan-list-box .songsdan-list .play-img-box {
+  width: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=./ToDaySongs.css.map */

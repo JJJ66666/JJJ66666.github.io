@@ -1,0 +1,53 @@
+.singertop /deep/ .van-nav-bar {
+  background-color: #0c0c0c;
+}
+.singertop /deep/ .van-nav-bar .van-icon {
+  color: #fff;
+}
+.singertop /deep/ .van-nav-bar__title {
+  color: #fff;
+}
+.singertop /deep/ [class*=van-hairline]::after {
+  border: none;
+}
+.singertop .singertop-box {
+  padding-top: 48px;
+  margin-bottom: 20px;
+}
+.singertop .singertop-box .list-singer {
+  margin-top: 15px;
+  width: 100%;
+}
+.singertop .singertop-box .list-singer .singer {
+  width: 33%;
+}
+.singertop .singertop-box .list-singer .singer .singer-content {
+  width: calc(100% - 20px);
+  padding: 0px 10px;
+  position: relative;
+}
+.singertop .singertop-box .list-singer .singer .img-box {
+  background-size: cover;
+  width: 100%;
+  padding: 100% 0 0;
+  background-position: center;
+  border-radius: 10px;
+}
+.singertop .singertop-box .list-singer .singer .img-box:hover {
+  transform: scale(0.9);
+}
+.singertop .singertop-box .list-singer .singer .singer-text {
+  color: #999;
+  text-align: center;
+  height: 32px;
+  padding: 0px 10px;
+  padding-top: 5px;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+/*# sourceMappingURL=./SingerTop.css.map */
