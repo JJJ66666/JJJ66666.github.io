@@ -1,0 +1,121 @@
+.Detail .nav {
+  padding: 15px 0;
+}
+.Detail /deep/ .van-nav-bar {
+  height: auto;
+}
+.Detail .detail-box {
+  padding: 0 10px;
+  padding-top: 90px;
+}
+.Detail .detail-box .detail-list {
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0 0 8px 1px #999;
+}
+.Detail .detail-box .detail-list .header {
+  padding: 5px 0;
+}
+.Detail .detail-box .detail-list .header .header-img {
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.Detail .detail-box .detail-list .header .header-text {
+  width: calc(100% - 50px);
+}
+.Detail .detail-box .detail-list .header .header-text .text-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+.Detail .detail-box .detail-list .header .header-text .text-decs {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.Detail .detail-box .detail-list .header .header-text .text-decs span {
+  color: #999;
+}
+.Detail .detail-box .detail-list .header .header-text .text-decs .decs {
+  margin-left: 10px;
+  font-weight: 600;
+  color: #000;
+}
+.Detail .detail-box .detail-list .detail-layout .detail-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.Detail .detail-box .detail-list .detail-layout .label {
+  margin: 10px;
+}
+.Detail .detail-box .detail-list .detail-layout .label span {
+  display: inline-block;
+  padding: 2px 5px;
+  background: #ff7b7b78;
+  margin-right: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.Detail .detail-box .detail-list .detail-layout .detail-img {
+  width: 100%;
+  position: relative;
+}
+.Detail .detail-box .detail-list .detail-layout .detail-img span {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.575);
+  padding: 2px 5px;
+}
+.Detail .detail-box /deep/ .van-popup {
+  background-color: rgba(0, 0, 0, 0.747);
+}
+.Detail .detail-box .details-box {
+  padding-top: 40px;
+}
+.Detail .detail-box .details-box .author-box {
+  padding: 0 10px;
+}
+.Detail .detail-box .details-box .author-box .author-title {
+  color: antiquewhite;
+}
+.Detail .detail-box .details-box .author-box .author-header {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding: 15px 0;
+}
+.Detail .detail-box .details-box .author-box .author-header .img-box {
+  width: 40px;
+  margin-right: 20px;
+}
+.Detail .detail-box .details-box .author-box .author-header .img-box img {
+  border-radius: 50%;
+}
+.Detail .detail-box .details-box .author-box .author-header .text-box {
+  color: #ebebeb;
+  width: calc(100% - 60px);
+}
+.Detail .detail-box .details-box .author-box .author-header .text-box .text-name {
+  font-size: 14px;
+}
+.Detail .detail-box .details-box .author-box .author-header .text-box .text-desc {
+  color: #999;
+}
+.Detail .detail-box .details-box .author-box .author-desc {
+  margin: 10px 0;
+  color: #ebebeb;
+  font-size: 12px;
+}
+.Detail .detail-box .details-box .author-box .author-title h3 {
+  margin: 0;
+}
+.Detail .detail-box .details-box .author-box .author-title .title-desc {
+  color: #999;
+  margin-top: 5px;
+}
+/*# sourceMappingURL=./Detail.css.map */

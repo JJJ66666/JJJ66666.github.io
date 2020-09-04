@@ -1,0 +1,34 @@
+.class {
+    .class-box {
+        padding: 50px 10px;
+
+        .class-detail {
+            width: calc(~"50% - 20px");
+            margin: 10px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.287);
+            }
+            &:hover{
+                &::before{
+                    opacity: 0;
+
+                }
+            }
+            .detail-text {
+                position: absolute;
+                left: 37%;
+                top: 40%;
+                font-size: 16px;
+                color: #fff;
+                font-weight: 800;
+            }
+        }
+    }
+}

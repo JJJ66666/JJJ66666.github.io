@@ -1,0 +1,159 @@
+.boutique .video-list-box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0 10px;
+}
+.boutique .video-list-box .video-list .video-box {
+  box-shadow: 0 0px 5px 0 #999;
+}
+.boutique .video-list-box .video-list .video-box .img-box {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.boutique .video-list-box .video-list .video-box .img-box span {
+  background-color: rgba(255, 255, 255, 0.527);
+  padding: 2px 5px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.boutique .video-list-box .video-list .video-box .img-box .imgSrc {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+.boutique .video-list-box .video-list .video-box .author-box {
+  padding: 5px 0;
+}
+.boutique .video-list-box .video-list .video-box .author-box .author-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.boutique .video-list-box .video-list .video-box .author-box .author-img img {
+  border-radius: 50%;
+}
+.boutique .video-list-box .video-list .video-box .author-box .author-text {
+  width: 80%;
+}
+.boutique .video-list-box .video-list .video-box .author-box .author-text .author-decs {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.boutique /deep/ .van-popup {
+  background-color: rgba(0, 0, 0, 0.747);
+}
+.boutique .details-box {
+  padding-top: 40px;
+}
+.boutique .details-box .video-details .video {
+  width: 100%;
+}
+.boutique .details-box .video-details .author-box {
+  padding: 0 10px;
+}
+.boutique .details-box .video-details .author-box .author-title {
+  color: antiquewhite;
+}
+.boutique .details-box .video-details .author-box .author-header {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding: 15px 0;
+}
+.boutique .details-box .video-details .author-box .author-header .img-box {
+  width: 40px;
+  margin-right: 20px;
+}
+.boutique .details-box .video-details .author-box .author-header .img-box img {
+  border-radius: 50%;
+}
+.boutique .details-box .video-details .author-box .author-header .text-box {
+  color: #ebebeb;
+  width: calc(100% - 60px);
+}
+.boutique .details-box .video-details .author-box .author-header .text-box .text-name {
+  font-size: 14px;
+}
+.boutique .details-box .video-details .author-box .author-header .text-box .text-desc {
+  color: #999;
+}
+.boutique .details-box .video-details .author-box .author-desc {
+  margin: 10px 0;
+  color: #ebebeb;
+  font-size: 12px;
+}
+.boutique .details-box .video-details .author-box .author-title h3 {
+  margin: 0;
+}
+.boutique .details-box .video-details .author-box .author-title .title-desc {
+  color: #999;
+  margin-top: 5px;
+}
+.boutique .details-box .img-details .img-details-box .img-details-swipe {
+  margin-top: calc(50% - 100px);
+}
+.boutique .details-box .img-details .img-details-box .img-details-swipe .img-box {
+  width: 100%;
+  height: 200px;
+}
+.boutique .details-box .img-details .img-details-box .img-details-swipe .img-box .imgSrc {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+.boutique .details-box .img-details .img-details-box .custom-indicator {
+  color: #fff;
+  position: absolute;
+  bottom: 90%;
+  right: calc(50% - 30px);
+  font-size: 22px;
+  display: inline-block;
+}
+.boutique .details-box .img-details .img-details-box .img-details-user {
+  width: calc(100% - 40px);
+  padding: 20px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.boutique .details-box .img-details .img-details-box .img-details-user .user-box {
+  margin-bottom: 5px;
+}
+.boutique .details-box .img-details .img-details-box .img-details-user .user-box .user-img {
+  width: 40px;
+  margin-right: 20px;
+}
+.boutique .details-box .img-details .img-details-box .img-details-user .user-box .user-img img {
+  border-radius: 50%;
+}
+.boutique .details-box .img-details .img-details-box .img-details-user .user-box .user-text .text-name {
+  font-size: 14px;
+}
+.boutique .details-box .img-details .img-details-box .img-details-user .user-box .user-text .text-decs {
+  color: #888888;
+}
+.boutique .details-box .img-details .img-details-box .img-details-user .user-box .user-location {
+  color: #999;
+}
+.boutique .details-box .img-details .img-details-box .img-details-user .title-box {
+  margin-left: 20px;
+}
+.boutique .details-box .img-details .img-details-box .img-details-user .title-box .title {
+  font-size: 14px;
+}
+.boutique .custom-indicator {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  padding: 2px 5px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=./Boutique.css.map */

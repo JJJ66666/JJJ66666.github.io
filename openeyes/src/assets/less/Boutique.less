@@ -1,0 +1,211 @@
+.boutique {
+    .video-list-box {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0 10px;
+
+        .video-list {
+            .video-box {
+                box-shadow: 0 0px 5px 0 #999;
+
+                .img-box {
+                    width: 100%;
+                    height: 200px;
+                    position: relative;
+                    span{
+                        background-color: rgba(255, 255, 255, 0.527);
+                        padding: 2px 5px;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+                    }
+                    .imgSrc {
+                        width: 100%;
+                        height: 200px;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+
+                .author-box {
+                    padding: 5px 0;
+
+                    .author-img {
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 10px;
+
+                        img {
+                            border-radius: 50%;
+                        }
+
+                        // padding: 10px;
+                    }
+
+                    .author-text {
+                        width: 80%;
+
+                        .author-decs {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    /deep/ .van-popup {
+        background-color: rgba(0, 0, 0, 0.747);
+    }
+
+    .details-box {
+        padding-top: 40px;
+        .video-details {
+            .video {
+                width: 100%;
+            }
+
+            .author-box {
+                padding: 0 10px;
+
+                .author-title {
+                    color: antiquewhite;
+                }
+
+                .author-header {
+                    border-top: 1px solid #999;
+                    border-bottom: 1px solid #999;
+                    padding: 15px 0;
+                    .img-box {
+                        width: 40px;
+                        margin-right: 20px;
+                        
+                        img {
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .text-box {
+                        color: rgb(235, 235, 235);
+                        width: calc(~"100% - 60px");
+                        .text-name {
+                            font-size: 14px;
+                        }
+
+                        .text-desc {
+                            color: #999;
+                        }
+                    }
+                }
+
+                .author-desc {
+                    margin: 10px 0;
+                    color: rgb(235, 235, 235);
+                    font-size: 12px;
+                }
+                .author-title{
+                    h3{
+                        margin: 0;
+                    }
+                    .title-desc{
+                        color: #999;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+
+        .img-details {
+            .img-details-box {
+                .img-details-swipe {
+                    margin-top: calc(~"50% - 100px");
+
+                    .img-box {
+                        width: 100%;
+                        height: 200px;
+
+                        .imgSrc {
+                            width: 100%;
+                            height: 200px;
+                            // background-image: url('http://img.kaiyanapp.com/85d152ea079ff6dbec7c2cde39c2120c.png');
+                            background-position: center;
+                            background-size: cover;
+                        }
+                    }
+
+                }
+
+                .custom-indicator {
+                    color: #fff;
+                    position: absolute;
+                    bottom: 90%;
+                    right: calc(~"50% - 30px");
+                    font-size: 22px;
+                    display: inline-block;
+                }
+
+                .img-details-user {
+                    width: calc(~"100% - 40px");
+                    padding: 20px;
+                    background-color: #ccc;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+
+                    .user-box {
+                        margin-bottom: 5px;
+
+                        .user-img {
+                            width: 40px;
+                            margin-right: 20px;
+
+                            img {
+                                border-radius: 50%;
+                            }
+                        }
+
+                        .user-text {
+                            .text-name {
+                                font-size: 14px;
+                            }
+
+                            .text-decs {
+                                color: #888888;
+                            }
+                        }
+
+                        .user-location {
+                            color: #999;
+                        }
+
+                    }
+
+                    .title-box {
+                        margin-left: 20px;
+
+                        .title {
+                            font-size: 14px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .custom-indicator {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        padding: 2px 5px;
+        font-size: 12px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+}
