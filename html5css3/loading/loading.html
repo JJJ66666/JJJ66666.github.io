@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .warp {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #ED5565;
+            padding: 50px 0;
+
+        }
+
+        .warp .layout {
+            width: 800px;
+            height: 100%;
+        }
+
+        .warp .layout ul.row {
+            display: flex;
+
+        }
+
+        .warp .layout ul.row>li {
+            flex: 1;
+            /* background:#e47883; */
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* =======1.1======= */
+        .warp .layout ul.row>li ul.row-ul-round {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .warp .layout ul.row>li ul.row-ul-round>li {
+            flex: 1;
+            text-align: center;
+            animation: myMove 0.3s ease-in-out infinite alternate;
+        }
+
+        .warp .layout ul.row>li ul.row-ul-round>li:nth-of-type(2) {
+            animation-delay: -0.4s;
+        }
+
+        .warp .layout ul.row>li ul.row-ul-round>li:nth-of-type(3) {
+            animation-delay: -0.8s;
+        }
+
+        .warp .layout ul.row>li ul.row-ul-round>li span {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: #ffffff;
+            border-radius: 50%;
+        }
+
+        @keyframes myMove {
+            0% {
+                transform: scale(0.4);
+                animation-delay: 0.6s;
+
+            }
+
+            100% {
+                transform: scale(1);
+
+            }
+        }
+
+        /* =========1.2========== */
+        .warp .layout ul.row>li .rotate-kong {
+            width: 10%;
+            height: 10%;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            border-right: 1px solid transparent;
+            animation: myRotate 0.8s ease-in-out infinite;
+
+        }
+
+        @keyframes myRotate {
+            0% {
+
+                transform: rotateZ(0deg) scale(1);
+            }
+
+            25% {
+                transform: rotateZ(90deg) scale(0.75);
+
+            }
+
+            50% {
+                transform: rotateZ(180deg) scale(0.5);
+
+            }
+
+            75% {
+                transform: rotateZ(270deg) scale(0.75);
+
+            }
+
+            100% {
+                transform: rotateZ(360deg) scale(1);
+
+            }
+        }
+
+        /* =======1.3======= */
+        .warp .layout ul.row>li .warp-square {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            perspective: 60px;
+
+
+        }
+
+        .warp .layout ul.row>li .warp-square .square {
+            width: 20%;
+            height: 20%;
+            background-color: #ffffff;
+            border: 1px solid red;
+            transform-style: preserve-3d;
+            transform-origin: center center;
+            animation: mysquare 3s ease-in-out infinite;
+        }
+
+        @keyframes mysquare {
+            0% {
+                transform: rotateY(0deg) rotateX(0deg);
+
+            }
+
+            25% {
+                transform: rotateY(-180deg) rotateX(0deg);
+
+            }
+
+            50% {
+                transform: rotateY(-180deg) rotateX(180deg);
+
+            }
+
+            75% {
+                transform: rotateY(-360deg) rotateX(180deg);
+
+            }
+
+            100% {
+                transform: rotateY(-360deg) rotateX(360deg);
+
+            }
+        }
+
+        /* =======1.4======= */
+        .warp .layout ul.row>li ul.row-ul-line {
+            width: 40%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .warp .layout ul.row>li ul.row-ul-line>li {
+            height: 100%;
+            flex: 1;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .warp .layout ul.row>li ul.row-ul-line>li span {
+            display: inline-block;
+            width: 25%;
+            height: 30%;
+            background-color: #ffffff;
+            animation: myulline .8s ease-in-out infinite;
+        }
+
+        .warp .layout ul.row>li ul.row-ul-line>li:nth-of-type(2) span {
+            animation-delay: -0.3s;
+
+        }
+
+        .warp .layout ul.row>li ul.row-ul-line>li:nth-of-type(3) span {
+            animation-delay: -0.6s;
+        }
+
+        .warp .layout ul.row>li ul.row-ul-line>li:nth-of-type(4) span {
+            animation-delay: -0.3s;
+        }
+
+        .warp .layout ul.row>li ul.row-ul-line>li:nth-of-type(5) span {
+            animation-delay: 0s;
+        }
+
+        @keyframes myulline {
+            0% {
+                transform: scaleY(1);
+            }
+
+            50% {
+                transform: scaleY(0.3);
+            }
+
+            100% {
+                transform: scaleY(1);
+            }
+        }
+
+        /* =======2.1======= */
+        .warp .layout ul.row1>li .rotate-banyuan {
+            width: 25%;
+            height: 25%;
+            display: flex;
+            justify-content: center;
+            /* transform: rotateZ(60deg); */
+            animation: mybanyuan .6s linear infinite;
+
+        }
+
+        .warp .layout ul.row1>li .rotate-banyuan .banyuan {
+            width: 30px;
+            height: 13px;
+            border-radius: 13px 13px 0 0;
+            background-color: #ffffff;
+        }
+
+        @keyframes mybanyuan {
+            form {
+                transform: rotateZ(0deg);
+
+            }
+
+            to {
+                transform: rotateZ(360deg);
+
+            }
+        }
+
+        /* =======2.2======= */
+        .warp .layout ul.row1>li .move-small-square {
+            width: 35%;
+            height: 35%;
+            display: flex;
+        }
+
+        .warp .layout ul.row1>li .move-small-square .nth1 {
+            width: 20%;
+            height: 20%;
+            background-color: #ffffff;
+            animation: mymove-small-square1 2s ease-in-out infinite;
+
+        }
+
+        .warp .layout ul.row1>li .move-small-square .nth2 {
+            width: 20%;
+            height: 20%;
+            background-color: #ffffff;
+            animation: mymove-small-square2 2s ease-in-out infinite;
+            transform: translateX(56px) translateY(56px)
+        }
+
+        @keyframes mymove-small-square1 {
+            0% {
+                transform: translateX(0px) rotateZ(0deg) scale(1);
+
+            }
+
+            25% {
+                transform: translateX(70px) rotateZ(-90deg) scale(0.5);
+            }
+
+            50% {
+                transform: translateX(70px) translateY(56px) rotateZ(-180deg) scale(1);
+            }
+
+            75% {
+                transform: translateX(0px) translateY(56px) rotateZ(-270deg) scale(0.5);
+            }
+
+            100% {
+                transform: translateX(0px) translateY(0px) rotateZ(-360deg) scale(1);
+            }
+        }
+
+        @keyframes mymove-small-square2 {
+            0% {
+                transform: translateX(56px) translateY(56px) rotateZ(-270deg) scale(1);
+
+            }
+
+            25% {
+                transform: translateX(-14px) translateY(56px) rotateZ(-90deg) scale(0.5);
+            }
+
+            50% {
+                transform: translateX(-14px) translateY(0px) rotateZ(0deg) scale(1);
+
+            }
+
+            75% {
+                transform: translateX(56px) rotateZ(-90deg) scale(0.5);
+
+            }
+
+            100% {
+                transform: translateX(56px) translateY(56px) rotateZ(-180deg) scale(1);
+
+            }
+        }
+
+        /* =======2.3======= */
+        .warp .layout ul.row1>li ul.row1-ul-ripple {
+            width: 35%;
+            height: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .warp .layout ul.row1>li ul.row1-ul-ripple li {
+            width: 100%;
+            height: 100%;
+            transform: scale(0.1);
+
+            background: #ffffff;
+            position: absolute;
+            animation: myripple 1.5s linear infinite;
+            border-radius: 50%;
+        }
+
+        .warp .layout ul.row1>li ul.row1-ul-ripple li:nth-of-type(2) {
+            animation-delay: 0.3s;
+        }
+
+        .warp .layout ul.row1>li ul.row1-ul-ripple li:nth-of-type(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes myripple {
+            0% {
+                transform: scale(0.1);
+                opacity: 1;
+                animation-delay: 0.3s;
+
+            }
+
+            70% {
+                transform: scale(0.7);
+                opacity: 0.3;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 0;
+
+            }
+        }
+
+        /* ======2.4======= */
+        .warp .layout ul.row1>li ul.row1-ul-ripple.hollow li {
+            background: none;
+            border: 2px solid #ffffff;
+            animation: myripple-hollow 2s ease-out infinite;
+        }
+
+        .warp .layout ul.row1>li ul.row1-ul-ripple.hollow li:nth-of-type(2) {
+            animation-delay: 0.3s;
+        }
+
+        .warp .layout ul.row1>li ul.row1-ul-ripple.hollow li:nth-of-type(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes myripple-hollow {
+            0% {
+                transform: scale(0.1);
+                /* animation-delay: 0.6s; */
+
+            }
+
+
+            95% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+
+        /* ======3.1======= */
+        .warp .layout ul.row2>li .tow-banyuan {
+            width: 50px;
+            height: 50px;
+        }
+
+        .warp .layout ul.row2>li .tow-banyuan div {
+            width: 50px;
+            height: 25px;
+            background-color: #ffffff;
+        }
+
+        .warp .layout ul.row2>li .tow-banyuan div:nth-of-type(1) {
+            border-radius: 25px 25px 0 0;
+            transform: rotateZ(-45deg);
+            transform-origin: bottom center;
+            animation: openmouth1 .5s linear infinite;
+
+        }
+
+        .warp .layout ul.row2>li .tow-banyuan div:nth-of-type(2) {
+            border-radius: 0 0 25px 25px;
+            transform: rotateZ(45deg);
+            transform-origin: top center;
+            animation: openmouth2 .5s linear infinite;
+
+        }
+
+        @keyframes openmouth1 {
+            0% {
+                transform: rotateZ(-45deg);
+            }
+
+            30% {
+                transform: rotateZ(0deg);
+            }
+
+            70% {
+                transform: rotateZ(0deg);
+            }
+
+            100% {
+                transform: rotateZ(-45deg);
+            }
+        }
+
+        @keyframes openmouth2 {
+            0% {
+                transform: rotateZ(45deg);
+            }
+
+            30% {
+                transform: rotateZ(0deg);
+            }
+
+            70% {
+                transform: rotateZ(0deg);
+            }
+
+            100% {
+                transform: rotateZ(45deg);
+            }
+        }
+
+        .warp .layout ul.row2>li {
+            position: relative;
+        }
+
+        .warp .layout ul.row2>li ul.White-dot {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            top: 48%;
+            right: 10%;
+        }
+
+        .warp .layout ul.row2>li ul.White-dot li {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            border-radius: 50%;
+            animation: White-dot-move 1.2s linear infinite;
+
+        }
+
+        .warp .layout ul.row2>li ul.White-dot li:nth-of-type(2) {
+            animation-delay: 0.4s;
+        }
+
+        .warp .layout ul.row2>li ul.White-dot li:nth-of-type(3) {
+            animation-delay: 0.8s;
+        }
+
+        @keyframes White-dot-move {
+            0% {
+                transform: translateX(0px);
+            }
+
+            60% {
+                opacity: 1;
+
+            }
+
+            100% {
+                transform: translateX(-80px);
+                opacity: 0;
+            }
+        }
+
+        /* ======3.2======= */
+        
+        .warp .layout ul.row2>li ul.rotate360 {
+            width: 15%;
+            height: 15%;
+            transform: rotateZ(45deg);
+            animation:ULrotate360 1s linear infinite;
+
+        }
+
+        .warp .layout ul.row2>li ul.rotate360 li {
+            width: 100%;
+            height: 50%;
+            display: flex;
+        }
+        .warp .layout ul.row2>li ul.rotate360 li span{
+            flex: 1;
+            background-color: #ffffff;
+            transform: scale(1);
+            animation:ULspanScale 1s ease-in-out infinite;
+
+        }
+        .warp .layout ul.row2>li ul.rotate360 li:nth-of-type(1) span:nth-of-type(1){
+            /* background-color: rgb(33, 64, 122); */
+            border-radius: 100% 0 0 0;
+            /* transform: translateY(-15px) translateX(-15px); */
+        }
+        .warp .layout ul.row2>li ul.rotate360 li:nth-of-type(1) span:nth-of-type(2){
+            /* background-color:rgb(151, 46, 46); */
+            border-radius:0 100%  0 0;
+            /* transform: translateY(-15px) translateX(15px); */
+        }
+        .warp .layout ul.row2>li ul.rotate360 li:nth-of-type(2) span:nth-of-type(1){
+            /* background-color: rgb(197, 169, 92); */
+            border-radius: 0 0 0 100%;
+            /* transform: translateY(15px) translateX(-15px); */
+        }
+        .warp .layout ul.row2>li ul.rotate360 li:nth-of-type(2) span:nth-of-type(2){
+            /* background-color:rgb(68, 151, 60); */
+            border-radius:0 0 100% 0;
+            /* transform: translateY(15px) translateX(15px); */
+        }
+        @keyframes ULrotate360 {
+            0%{
+            transform: rotateZ(45deg) scale(1);
+            }
+            20%{
+            transform: rotateZ(135deg) scale(1.5);
+
+            }
+            40%{
+            transform: rotateZ(225deg) scale(2);
+
+            }
+            60%{
+            transform: rotateZ(315deg) scale(1.5);
+
+            }
+            80%{
+            transform: rotateZ(370deg) scale(1);
+            }
+            100%{
+            transform: rotateZ(405deg) scale(1);
+            }
+        }
+        @keyframes ULspanScale {
+            0%{
+            transform:scale(1);
+            }
+            20%{
+            transform: scale(0.75);
+
+            }
+            40%{
+            transform:scale(0.5);
+
+            }
+            60%{
+            transform:scale(0.75);
+
+            }
+            80%{
+            transform:scale(1);
+
+            }
+            100%{
+            transform:scale(1);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="warp">
+        <div class="layout">
+            <ul class="row">
+                <li>
+                    <ul class="row-ul-round">
+                        <li><span></span></li>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="rotate-kong"></div>
+                </li>
+                <li>
+                    <div class="warp-square">
+                        <div class="square"></div>
+                    </div>
+                </li>
+                <li>
+                    <ul class="row-ul-line">
+                        <li><span></span></li>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="row row1">
+                <li>
+                    <div class="rotate-banyuan">
+                        <div class="banyuan"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="move-small-square">
+                        <div class="nth1"></div>
+                        <div class="nth2"></div>
+                    </div>
+                </li>
+                <li>
+                    <ul class="row1-ul-ripple">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row1-ul-ripple hollow">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="row row2">
+                <li>
+                    <div class="tow-banyuan">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul class="White-dot">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="rotate360">
+                        <li><span></span>
+                            <span></span>
+                        </li>
+                        <li><span></span>
+                            <span></span>
+                        </li>
+                    </ul>
+
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
