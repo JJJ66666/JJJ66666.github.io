@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cards.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="warp">
+        <div class="layout">
+            <ul class="row">
+                <li>
+                    <div class="div">
+                        <a href="javascript:;">
+                            <!-- <img src="./img/shicha1.png" alt=""> -->
+                            <img src="http://www.jq22.com/demo/vuehover201911282316/img/jq22-2.png" alt="">
+                            <div class="guangquan"></div>
+                        </a>
+                    </div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var div = document.querySelector('.div');
+
+        var card = document.querySelector('a');
+        var guangquan = document.querySelector('.guangquan');
+        var cardLeft, cardTop,divTop,divLeft;
+        card.onmouseover = function () {
+
+            // cardLeft = card.offsetLeft
+            // cardTop = card.offsetTop
+            cardTop = this.clientTop
+            cardLeft = this.clientLeft
+            divTop = div.offsetTop
+            divLeft = div.offsetLeft
+
+
+        }
+        card.onmousemove = function (e) {
+            // console.log(cardTop,cardLeft,divTop,divLeft);
+            guangquan.style.top = 100-(e.pageY - cardTop -divTop - 100)/3+ 'px'
+            guangquan.style.left = 100-(e.pageX - cardLeft -divLeft - 100)/3+ 'px'
+            // var x = (e.pageY - cardTop -divTop - 100)/5;
+            // var y = -(e.pageX - cardLeft -divLeft - 100)/5;
+            var x = -(e.pageY - cardTop -divTop - 100)/5;
+            var y = (e.pageX - cardLeft -divLeft - 100)/5;
+            // console.log(x,y);
+            this.style.transform = 'rotateX(' + x + 'deg) rotateY(' + y + 'deg)';
+        }
+        card.onmouseout = function (event) {
+            this.style.transform = 'rotateX(0deg) rotateY(0deg)';
+        }
+    </script>
+</body>
+
+</html>

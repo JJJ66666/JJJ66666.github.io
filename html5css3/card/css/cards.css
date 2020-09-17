@@ -1,0 +1,82 @@
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  margin: 0;
+}
+.warp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ED5565;
+  padding: 50px 0;
+}
+.warp .layout {
+  width: 800px;
+  height: 100%;
+}
+.warp .layout ul.row {
+  display: flex;
+}
+.warp .layout ul.row > li {
+  flex: 1;
+  /* background:#e47883; */
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.warp .layout ul.row > li div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 300px;
+  transform-style: preserve-3d;
+}
+.warp .layout ul.row > li div a {
+  display: block;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  transition: width 0.3s, height 0.3s, filter 0.3s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+.warp .layout ul.row > li div a .guangquan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 30%;
+  background: #ffffff7e;
+  border: #ffffff7e;
+  box-shadow: 0 0 67px 60px #ffffff7e;
+  border-radius: 50%;
+  z-index: 99;
+  display: none;
+}
+.warp .layout ul.row > li div a img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+}
+.warp .layout ul.row > li div a:hover {
+  transform: translateZ(30px);
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 30px 10px #00000057;
+}
+.warp .layout ul.row > li div a:hover .guangquan {
+  display: block;
+}
+.warp .layout ul.row > li div a:hover img {
+  filter: grayscale(0%);
+}
+/*# sourceMappingURL=./cards.css.map */
